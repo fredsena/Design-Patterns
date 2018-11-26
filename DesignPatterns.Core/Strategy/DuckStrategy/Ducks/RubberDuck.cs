@@ -8,8 +8,8 @@ namespace DesignPatterns.Core.Strategy.DuckStrategy.Ducks
 {
     public class RubberDuck : Duck
     {
-        IFlyBehavior flyBehavior = new FlyNoWay();
-        IQuackBehavior quackBehavior = new Squeak();
+        new IFlyBehavior flyBehavior = new FlyNoWay();
+        new IQuackBehavior quackBehavior = new Squeak();
 
         public override void Display()
         {

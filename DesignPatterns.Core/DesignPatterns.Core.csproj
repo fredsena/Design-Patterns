@@ -4,4 +4,9 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Decorator\Diagrams\" />
+    <Folder Include="Strategy\Diagrams\" />
+  </ItemGroup>
+
 </Project>
