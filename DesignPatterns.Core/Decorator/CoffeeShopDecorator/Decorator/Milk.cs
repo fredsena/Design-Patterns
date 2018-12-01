@@ -7,7 +7,7 @@ namespace DesignPatterns.Core.Decorator.CoffeeShopDecorator.Decorator
 {
     public class Milk : CondimentDecorator
     {
-        readonly Beverage beverage;
+        private readonly Beverage beverage;
 
         public Milk(Beverage beverage)
         {

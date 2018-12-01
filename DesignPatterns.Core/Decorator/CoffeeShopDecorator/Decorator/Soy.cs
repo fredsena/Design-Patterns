@@ -7,7 +7,7 @@ namespace DesignPatterns.Core.Decorator.CoffeeShopDecorator.Decorator
 {
     public class Soy: CondimentDecorator
     {
-        Beverage beverage;
+        private readonly Beverage beverage;
 
         public Soy(Beverage beverage)
         {

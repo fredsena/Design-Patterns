@@ -7,7 +7,7 @@ namespace DesignPatterns.Core.Decorator.CoffeeShopDecorator.Decorator
 {
     public class Whip: CondimentDecorator
     {
-        Beverage beverage;
+        private readonly Beverage beverage;
 
         public Whip(Beverage beverage)
         {

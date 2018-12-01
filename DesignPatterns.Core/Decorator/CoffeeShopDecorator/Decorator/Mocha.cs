@@ -7,7 +7,7 @@ namespace DesignPatterns.Core.Decorator.CoffeeShopDecorator.Decorator
 {
     public class Mocha : CondimentDecorator
     {
-        Beverage beverage;
+        private readonly Beverage beverage;
 
         public Mocha(Beverage beverage)
         {

@@ -7,6 +7,6 @@ namespace DesignPatterns.Core.Decorator.CoffeeShopDecorator.Decorator
 {
     public abstract class CondimentDecorator : Beverage
     {
-        public abstract String GetDescription();
+        public abstract string GetDescription();
     }
 }
