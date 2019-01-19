@@ -7,37 +7,32 @@ namespace DesignPatterns.Core.Strategy.DuckStrategy
 {
     public abstract class Duck
     {
-        public IFlyBehavior flyBehavior;
-        public IQuackBehavior quackBehavior;
+        public IFlyBehavior _iFlyBehavior;
+        public IQuackBehavior _iQuackBehavior;
 
-        public Duck()
+        public void SetFlyBehavior(IFlyBehavior iFlyBehavior)
         {
-
+            _iFlyBehavior = iFlyBehavior;
         }
 
-        public void SetFlyBehavior(IFlyBehavior flyBehavior)
+        public void SetQuackBehavior(IQuackBehavior iQuackBehavior)
         {
-            this.flyBehavior = flyBehavior;
+            _iQuackBehavior = iQuackBehavior;
         }
 
-        public void SetQuackBehavior(IQuackBehavior quackBehavior)
+        public string Swim()
         {
-            this.quackBehavior = quackBehavior;
+            return "All Ducks float!!!";
         }
 
-        public void Swim()
+        public void DoQuack()
         {
-            Console.WriteLine("All Ducks float!!!");
+            _iQuackBehavior.Quack();
         }
 
-        public void PerformQuack()
+        public void DoFly()
         {
-            quackBehavior.Quack();
-        }
-
-        public void PerformFly()
-        {
-            flyBehavior.Fly();
+            _iFlyBehavior.Fly();
         }
 
         public abstract void Display();

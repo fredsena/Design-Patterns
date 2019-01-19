@@ -6,6 +6,6 @@ namespace DesignPatterns.Core.Strategy.DuckStrategy.Interfaces
 {
     public interface IQuackBehavior
     {
-        void Quack();
+        string Quack();
     }
 }

@@ -5,11 +5,11 @@ using System.Text;
 
 namespace DesignPatterns.Core.Strategy.DuckStrategy.Algorithm
 {
-    public class FlyWithWings : IFlyBehavior
+    public class MuteQuack : IQuackBehavior
     {
-        public string Fly()
+        public string Quack()
         {
-            return "I can Fly!!!!";
+            return "<< Silence >>";
         }
     }
 }

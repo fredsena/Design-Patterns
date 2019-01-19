@@ -1,22 +1,21 @@
 ﻿using DesignPatterns.Core.Strategy.DuckStrategy.Algorithm;
-using DesignPatterns.Core.Strategy.DuckStrategy.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace DesignPatterns.Core.Strategy.DuckStrategy.Ducks
 {
-    public class RubberDuck : Duck
+    public class DecoyDuck : Duck
     {
-        public RubberDuck()
+        public DecoyDuck()
         {
             _iFlyBehavior = new FlyNoWay();
-            _iQuackBehavior = new Squeak();
+            _iQuackBehavior = new MuteQuack();
         }
 
         public override void Display()
         {
-            Console.WriteLine("I'm a rubber duckie");
+            throw new NotImplementedException();
         }
     }
 }

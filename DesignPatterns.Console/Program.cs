@@ -11,10 +11,10 @@ namespace DesignPatterns.Main
             Console.WriteLine("Hello World!");
 
             var modelDuck = new ModelDuck();
-            modelDuck.PerformFly();
+            modelDuck.DoFly();
 
             modelDuck.SetFlyBehavior(new FlyWithWings());
-            modelDuck.PerformFly();
+            modelDuck.DoFly();
 
             Console.ReadLine();
         }

@@ -7,9 +7,9 @@ namespace DesignPatterns.Core.Strategy.DuckStrategy.Algorithm
 {
     public class Squeak : IQuackBehavior
     {
-        public void Quack()
+        string IQuackBehavior.Quack()
         {
-            Console.WriteLine("Squeak!!");
+            return "Squeak!!";
         }
     }
 }

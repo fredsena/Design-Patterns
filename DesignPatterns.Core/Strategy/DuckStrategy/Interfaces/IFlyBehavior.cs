@@ -6,6 +6,6 @@ namespace DesignPatterns.Core.Strategy.DuckStrategy.Interfaces
 {
     public interface IFlyBehavior
     {
-        void Fly();
+        string Fly();
     }
 }

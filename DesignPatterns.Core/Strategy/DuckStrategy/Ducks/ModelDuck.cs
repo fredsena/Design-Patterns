@@ -9,8 +9,8 @@ namespace DesignPatterns.Core.Strategy.DuckStrategy.Ducks
     {
         public ModelDuck()
         {
-            flyBehavior = new FlyNoWay();
-            quackBehavior = new Quack();
+            _iFlyBehavior = new FlyNoWay();
+            _iQuackBehavior = new Quack();
         }
 
         public override void Display()

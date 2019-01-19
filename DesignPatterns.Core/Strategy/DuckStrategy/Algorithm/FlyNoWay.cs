@@ -7,9 +7,9 @@ namespace DesignPatterns.Core.Strategy.DuckStrategy.Algorithm
 {
     public class FlyNoWay : IFlyBehavior
     {
-        public void Fly()
+        public string Fly()
         {
-            Console.WriteLine("I can not fly...");
+            return "I can not Fly!!!!";
         }
     }
 }
