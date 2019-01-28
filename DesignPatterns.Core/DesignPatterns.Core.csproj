@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <Folder Include="Decorator\Diagrams\" />
+    <Folder Include="Factory\Diagram\" />
     <Folder Include="Iterator\Diagram\" />
     <Folder Include="Strategy\Diagrams\" />
   </ItemGroup>
