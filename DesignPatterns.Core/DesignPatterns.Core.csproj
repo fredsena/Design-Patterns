@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Command\Diagram\" />
     <Folder Include="Decorator\Diagrams\" />
     <Folder Include="Factory\Diagram\" />
     <Folder Include="Iterator\Diagram\" />
