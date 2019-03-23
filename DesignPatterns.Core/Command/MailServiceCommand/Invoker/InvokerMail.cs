@@ -1,7 +1,4 @@
 ﻿using DesignPatterns.Core.Command.MailServiceCommand.Commands;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace DesignPatterns.Core.Command.MailServiceCommand.Invoker
 {
